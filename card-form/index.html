@@ -6,36 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>card-form</title>
     <link href="style.css" rel="stylesheet"/>
+    <script defer src="skrypt.js"></script>
 </head>
 <body>
     <main>
         <!-- card section -->
         <section>
-            <!-- <div class="cvc">123</div> -->
+            <div class="cvc">000</div>
             <img class="card-back" src="images/bg-card-back.png" alt="Card-back"/>
             <img class="card-front" src="images/bg-card-front.png" alt="Card-front"/>
-            <!-- <img class="card-logo" src="images/card-logo.svg" alt="card-logo"/> -->
-            <!-- <div class="card-information">
+            <img class="card-logo" style="width: 50px;" src="images/card-logo.svg" alt="card-logo"/>
+            <div class="card-information">
                 <div class="number">0000 0000 0000 0000</div>
                 <div class="name-date">
-                    <p>michal wyrzgol</p>
-                    <p>00/00</p>
+                    <p class="name">NAME</p>
+                    <div class="mmyy">00/00</div>
                 </div>
-            </div> -->
+            </div> 
         </section>
 
         <!-- form section -->
          <article>
             <form>
                 <label>CARDHOLDER NAME</label>
-                <input class="name-number" type="text" placeholder="e.g. Michal Wyrzgol"/>
+                <input class="name-number form-name" type="text" placeholder="e.g. Michal Wyrzgol"/>
                 <label>CARD NUMBER</label>
-                <input class="name-number" type="text" placeholder="e.g. 1234 5678 9123 0000"/>
+                <input class="name-number form-number" type="tel" placeholder="e.g. 1234 5678 9123 0000"/>
                 <div class="date-cvc">
                     <div>
                         <label>EXP. DATE (MM/YY)</label>
-                        <input class="date" type="number" placeholder="MM">
-                        <input class="date" type="number" placeholder="YY">
+                        <input class="date mm" type="number" placeholder="MM">
+                        <input class="date yy" type="number" placeholder="YY">
                     </div>
                     <div>
                         <label>CVC</label>
